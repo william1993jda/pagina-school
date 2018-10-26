@@ -1,0 +1,38 @@
+.btn {
+    background-color: rgb(84, 209, 84);
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 30px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: all .5s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(84, 180, 84);
+}
+
+.img-box-round {
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.img-box-label:before {
+    content: '';
+    display: block;
+    width: 50%;
+    height: 60px;
+    border-right: 2px solid rgb(31, 123, 31);
+    background: transparent;
+    margin-bottom: 10px;
+}
+
+.btn.orange {
+    background-color: #fed136;
+}
+.btn.orange:hover{
+    background-color: #000000;
+}
