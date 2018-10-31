@@ -18,10 +18,27 @@ input:focus, textarea:focus {
     outline: 1px solid #777;
 }
 
+input::placeholder, textarea::placeholder {
+    color: white;
+}
+
 input:focus::placeholder, textarea:focus::placeholder {
     color: #aaaaaa;
 }
 
 .input-control {
     position: relative;
+}
+
+.input-control label {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    transition: all .5s ease;
+}
+
+.input-control input:focus ~ label, .input-control textarea:focus ~ label {
+    top: -25px;
+    font-size: 12px;
+    transition: all .5s ease;
 }
